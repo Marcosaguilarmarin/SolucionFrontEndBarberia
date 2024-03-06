@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FrontEndBarberia", "FrontEndBarberia\FrontEndBarberia.fsproj", "{DFBC8E6E-9BA0-44C8-9A3D-79E6C2F1E544}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFBC8E6E-9BA0-44C8-9A3D-79E6C2F1E544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBC8E6E-9BA0-44C8-9A3D-79E6C2F1E544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBC8E6E-9BA0-44C8-9A3D-79E6C2F1E544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBC8E6E-9BA0-44C8-9A3D-79E6C2F1E544}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7AA21F5-3F11-4E57-8AE3-014E0392B5BC}
+	EndGlobalSection
+EndGlobal
