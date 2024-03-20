@@ -1,11 +1,73 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+/*Main buttons*/
+
+.SecButtom {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    max-width: 100%;
+    width:auto;
+    color: #d9f1ff;
+    border-color: #d9f1ff;
+}
+
+    .SecButtom:hover {
+        color: #366784;
+        background-color: #d9f1ff;
+        border-color: #d9f1ff;
+}
+
+    .SecButtom:active {
+        color: #366784!important;
+        background-color: #aec1cc!important;
+        border-color: #aec1cc!important;
+    }
+
+.PrimButtom {
+    background-color: #101f28 !important;
+    border-color: #86a4b5 !important;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    max-width: 100%;
+    width: auto;
+    color: #d9f1ff;
+}
+
+    .PrimButtom:hover {
+
+        background-color: #1d3a4b !important;
+    }
 
 /*Header*/
 .mainfont {
     font-family: 'Roboto', sans-serif !important;
 }
+
+
+.HDimensions {
+    padding: 0px;
+    max-width: 100%;
+    background-image: linear-gradient(179deg, #4D7ABD, #366784) !important;
+}
+.HList li a {
+    font-size: large;
+    color: white;
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+    .HList li a:hover {
+        text-decoration: none;
+        color: #366784;
+        background-color: #D9f1ff;
+        border-radius: 5px;
+    }
 
 .barp {
 background-color:aqua !important
