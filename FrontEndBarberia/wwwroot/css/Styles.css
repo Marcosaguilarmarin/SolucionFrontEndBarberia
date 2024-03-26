@@ -14,6 +14,7 @@ for details on configuring this project to bundle and minify static web assets. 
     border-color: #d9f1ff;
     font-size: larger;
     font-weight: 400;
+    margin: 5px;
 }
 
     .SecButtom:hover {
@@ -38,19 +39,20 @@ for details on configuring this project to bundle and minify static web assets. 
        box-shadow:none;
     }
 
-    .PrimButtom {
-        background-color: #101f28 !important;
-        border-color: #86a4b5 !important;
-        padding-left: 18px;
-        padding-right: 18px;
-        padding-top: 6px;
-        padding-bottom: 6px;
-        max-width: 100%;
-        width: auto;
-        color: #d9f1ff;
-        font-size:larger;
-        font-weight:400;
-    }
+.PrimButtom {
+    background-color: #101f28 !important;
+    border-color: #86a4b5 !important;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    max-width: 100%;
+    width: auto;
+    color: #d9f1ff;
+    font-size: larger;
+    font-weight: 400;
+    margin: 5px;
+}
 
         .PrimButtom:hover {
             background-color: #1d3a4b !important;
@@ -71,6 +73,7 @@ for details on configuring this project to bundle and minify static web assets. 
     font-family: 'Roboto', sans-serif !important;
     margin: 0px !important;
     border-bottom-width: 0px !important;
+    justify-content: space-around !important;
 }
 
 
@@ -78,6 +81,8 @@ for details on configuring this project to bundle and minify static web assets. 
     padding: 0px;
     max-width: 100%;
     background-image: linear-gradient(179deg, #4D7ABD, #366784) !important;
+    position: fixed;
+    z-index: 2;
 }
 /*.HList li a {
     font-size: large;
@@ -141,12 +146,23 @@ for details on configuring this project to bundle and minify static web assets. 
 
 }
 
+.toggleList{
+
+    background:none;
+    border:none;
+    color:white;
+    display:none;
+    font-size:25px;
+}
 
 .navul {
     display: flex;
     gap: 1.75rem;
     list-style: none;
     font-size: larger;
+}
+.navul-hidden {
+    display: none;
 }
 
 /*MainBodyInfo*/
@@ -168,10 +184,6 @@ for details on configuring this project to bundle and minify static web assets. 
     object-fit: cover;
 }
 
-.logo-image {
-    max-width: 50%; /* Ajusta este valor según sea necesario */
-    height: auto;
-}
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -305,6 +317,11 @@ div#carouselIndicators {
     width: 15%;
 }
 
+.cardSize {
+    padding-left:20px;
+    width: 40%;
+}
+
 
 
 .schedule {
@@ -361,9 +378,58 @@ div#carouselIndicators {
 
 /*Responsive*/
 
+@media only screen and (max-width: 600px) {
+
+    .MTextAlign {
+        width: 100%
+    }
+
+    .MHorizontalDimension {
+        flex-direction: column;
+    }
+
+    div#carouselIndicators {
+        height: max-content !important;
+    }
+
+    .sponsors-width {
+        width: 30%;
+    }
+
+    .cardSize {
+        padding-left: 0px;
+        width: 80%;
+    }
+
+    .toggleList {
+        display: block;
+    }
+
+    .navul {
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        left: 100%;
+        transition: left 0.3s;
+        background-color: #101f28;
+        z-index: 1;
+    }
+
+    .navul-visible {
+        left: 0
+    }
+}
+
+
+
+
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     /* Estilos para tabletas */
+
 
     .MTextAlign {
         width: 100%
@@ -380,14 +446,32 @@ div#carouselIndicators {
     div#carouselIndicators {
         height: 300px !important;
     }
-}
 
-    @media only screen and (max-width: 600px) {
-        /* Estilos para pantallas más pequeñas */
+    .cardSize {
+        padding-left: 0px;
+        width: 60%;
     }
 
+    .toggleList {
+        display: block;
+    }
 
+    .navul {
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        left: 100%;
+        transition: left 0.3s;
+        background-color: #101f28;
+        z-index: 1;
+    }
 
+    .navul-visible {
+        left: 0
+    }
 
 
 
@@ -488,5 +572,7 @@ div#carouselIndicators {
         white-space: nowrap;
         line-height: 60px; /* Vertically center the text there */
     }
+}
+
 
 
