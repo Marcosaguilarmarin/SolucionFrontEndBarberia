@@ -1,0 +1,32 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  selenium_tests:
+    runs-on: windows-latest  # Cambia a Windows
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.x'  # Reemplaza '3.1.x' con la versión específica que necesitas
+
+    - name: Install Selenium WebDriver
+      run: |
+        choco install selenium-chrome-driver -y
+        # O cualquier otro comando necesario para instalar Selenium WebDriver en Windows
+
+    #- name: Run Selenium tests
+    #  run: |
+    #    cd Pruebas/HomePruebas
+    #    # Aquí ejecutas tus pruebas de Selenium. Por ejemplo:
+    #    # dotnet test
+    #    # python test_script.py
+    #    # npm test
