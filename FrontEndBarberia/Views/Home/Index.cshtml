@@ -13,24 +13,24 @@
         </ol>
         <div class="carousel-inner MCarousel-item ">
             <div class="carousel-item active  ">
-                <img class="d-block w-100" src="~/Assets/allef-vinicius-IvQeAVeJULw-unsplash.jpg" alt="First slide">
+                <img alt="Barbero cortando barba" class="d-block w-100" src="~/Assets/allef-vinicius-IvQeAVeJULw-unsplash.jpg" >
             </div>
             <div class="carousel-item MCarousel-item ">
-                <img class="d-block w-100" src="~/Assets/hai-phung-m4Pd_e-4zKs-unsplash.jpg" alt="Second slide">
+                <img alt="Barbero usando una maquina de rasurar" class="d-block w-100" src="~/Assets/hai-phung-m4Pd_e-4zKs-unsplash.jpg" >
             </div>
             <div class="carousel-item MCarousel-item ">
-                <img class="d-block w-100" src="~/Assets/mostafa-meraji-9twmmS4aXlE-unsplash.jpg" alt="Third slide">
+                <img alt="Barbero cortando cabello a persona mayor" class="d-block w-100" src="~/Assets/mostafa-meraji-9twmmS4aXlE-unsplash.jpg" >
             </div>
             <div class="carousel-item MCarousel-item ">
-                <img class="d-block w-100" src="~/Assets/jonathan-weiss-arxAZJT5k2A-unsplash.jpg" alt="Fourth slide">
+                <img alt="Barbero cortando cabello a niño" class="d-block w-100" src="~/Assets/jonathan-weiss-arxAZJT5k2A-unsplash.jpg" >
             </div>
         </div>
         <a style="z-index:1;" class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span id="NextArrow" class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a style="z-index:1;" class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span id="BackArrow" class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
@@ -45,16 +45,18 @@
                     StyleMate Cuenta con servicios premium de barbería y peluquería, donde priorizamos la satisfacción del cliente,
                     además contamos con diferentes estilistas los cuales están capacitados para adaptarse a tu gusto o brindarte asesoramiento
                 </p>
-
-                <button type="button" class="btn btn-outline-primary me-2 PrimButtom">Ver Servicios</button>
+                <form action="/Servicios/Servicios" method="get">
+                    <button id="ServiciosButtom" type="submit" class="btn btn-outline-primary me-2 PrimButtom">Ver Servicios</button>
+                </form>
+                
             </div>
             <div class="MHorizontalDimension">
                 <div style="position:relative">
-                    <div class="MImageLarge"><img class="" src="~/Assets/agustin-fernandez-Znyjl9pbaUs-unsplash.jpg">    </div>
-                    <div class="MImageSmall"><img class="" src="~/Assets/delfina-pan-8esvJeVUdes-unsplash.jpg">   </div>
+                    <div class="MImageLarge"><img alt="Maquinas de afeitado"  class="" src="~/Assets/agustin-fernandez-Znyjl9pbaUs-unsplash.jpg">    </div>
+                    <div class="MImageSmall"><img alt="Barbero cortando cabello" class="" src="~/Assets/delfina-pan-8esvJeVUdes-unsplash.jpg">   </div>
                 </div>
                 <div class="MVerticalDimensionNoPadding cardSize">
-                    <h2 class="" style="margin: 20px;">
+                    <h2 class="MSubTittleDimension" style="margin: 20px;">
 
                         Visión
 
@@ -70,15 +72,15 @@
 
 
 
-                <h2 style="margin: 20px;">
+                <h2 class="MSubTittleDimension ">
 
                     Patrocinadores
                 </h2>
                 <div>
                     <div class="sponsors-display">
-                        <img alt='RedBullLogo' class="sponsors-width" src="~/Assets/TipTop.png">
-                        <img alt='Jaggermeister logo' class="sponsors-width" src="~/Assets/Kingc C.png">
-                        <img alt='smirnoff logo' class="sponsors-width" src="~/Assets/Reuzel.png">
+                        <img alt='TipTopLogo' class="sponsors-width" src="~/Assets/TipTop.png">
+                        <img alt='KingC logo' class="sponsors-width" src="~/Assets/Kingc C.png">
+                        <img alt='Reuzel logo' class="sponsors-width" src="~/Assets/Reuzel.png">
                     </div>
                 </div>
             </div>

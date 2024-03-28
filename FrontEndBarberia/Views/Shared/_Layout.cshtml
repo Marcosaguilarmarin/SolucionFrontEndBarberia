@@ -5,7 +5,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - FrontEndBarberia</title>
+    <title>@ViewData["Title"] - StyleMate</title>
     <script src="https://kit.fontawesome.com/76a80f734b.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
@@ -16,28 +16,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: 'Roboto', sans-serif !important; ">
     <div class="container mainfont HDimensions">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom mainfont">
 
             <div style="text-align-last: end;" class="">
-                <h3>StyleMate</h3>
+                <h3 id="AppName">StyleMate</h3>
             </div>
             
             <div class="nav-wrapper">
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 HList navul navul-visible">
-                    <li><a href="#" class="linkList">Inicio</a></li>
-                    <li><a href="#" class="linkList">Servicios</a></li>
+                    <li><a href="/Home/Index" class="linkList">Inicio</a></li>
+                    <li><a href="/Servicios/Servicios" class="linkList">Servicios</a></li>
                     <li><a href="#" class="linkList">Perfil</a></li>
                     <li><a href="#" class="linkList">FAQs</a></li>
                 </ul>
             </div>
 
             <div style="display:flex" class="">
-
-                <button type="button" class="btn btn-outline-primary me-2 SecButtom">Login</button>
-                <button type="button" class="btn btn-primary PrimButtom">Sign-up</button>
-                <button class="toggleList" id="toggleListButton"><i class="fa-solid fa-bars"></i></button>
+                <form action="/Login/Login" method="get">
+                    <button alt="Boton de iniciar sesion" type="submit" class="btn btn-outline-primary me-2 SecButtom">Login</button>
+                </form>
+                <form action="/SignIn/SignIn" method="get">
+                    <button alt="Boton de registrarse" type="submit" class="btn btn-primary PrimButtom">Sign-up</button>
+                </form>
+                <button alt="Barbero de barra lateral" class="toggleList" id="toggleListButton"><i class="fa-solid fa-bars"></i></button>
             </div>
            
 
@@ -50,9 +53,60 @@
             </main>
         </div>
     </div>
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - FrontEndBarberia - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer style="bottom: auto; background-color: #101f28" class="border-top footer text-muted">
+        <div class="container">  
+            
+            <div class="MHorizontalDimension footerSize">
+
+
+                    <div class="MVerticalDimension">
+
+                        <h5 class="MSubTittleDimension footerTitles">Contactanos</h5>
+                        <hr />
+                        <div>
+                            <div>
+                                <a href="https://www.instagram.com/" id="IconSocialInsta" class="iconsSize"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com/es/" id="IconSocialTT" class="iconsSize"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                            <div><a id="IconSocialWhats" class="iconsSize"><i class="fa-brands fa-whatsapp"></i></a>+506 8500 0000 </div>
+                        </div>
+
+                    </div>
+
+
+
+                <div class="MVerticalDimension">
+                    <h5 class="MSubTittleDimension footerTitles">Ubicacion</h5>
+                    
+                    <p>
+                        Puedes encontrarnos 50 metros norte del subway de Sabana, San Jose
+                    </p>
+                    <div> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1964.9672228352788!2d-84.10474500621625!3d9.939412562702357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scr!4v1711593601674!5m2!1ses-419!2scr" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+                </div>
+
+                <div class="MVerticalDimension">
+
+                    <h5 class="MSubTittleDimension footerTitles">Horario</h5>
+
+                    <h6>Lunes a Viernes</h6>
+                    <p>9:00am - 6:00 pm</p>
+                    <h6>Sabado</h6>
+                    <p>9:00am - 3:00pm pm</p>
+                    <h6>Domingo</h6>
+                    <p>Cerrado</p>
+
+                </div>
+
+
+
+            </div>
+            
+            
+            <div style=" text-align-last: center; ">
+
+                &copy; 2024-StyleMate - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
         </div>
     </footer>
 
